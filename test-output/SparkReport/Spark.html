@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Grasshopper Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Mar 3, 2021 11:15:18 PM</span></a>
+<a href="#"><span class="badge badge-primary">Mar 4, 2021 12:21:55 AM</span></a>
 </li>
 </ul>
 </div>
@@ -66,13 +66,13 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Mar 3, 2021 11:15:18 PM</h3>
+<h3>Mar 4, 2021 12:21:55 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Mar 3, 2021 11:15:28 PM</h3>
+<h3>Mar 4, 2021 12:22:03 AM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -162,7 +162,7 @@
 </div></div>
 <script>
 var timeline = {
-"Adding new issue":8.17
+"Adding new issue":7.108
 };
 </script>
 <div class="row">
@@ -172,7 +172,7 @@ var timeline = {
 <div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
-<td>@POST</td>
+<td>@GET</td>
 <td>1</td>
 <td>0</td>
 <td>0</td>
@@ -242,7 +242,7 @@ eventsCount: 5,
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">@POST</a>
+<a class="dropdown-item" href="#">@GET</a>
 </ul>
 </li>
 </ul>
@@ -255,7 +255,7 @@ eventsCount: 5,
           <div class="test-detail">
             <p class="name">Adding new issue</p>
             <p class="text-sm">
-              <span>23:15:20 PM</span> / <span>00:00:08:170</span>
+              <span>00:21:56 AM</span> / <span>00:00:07:108</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -264,9 +264,9 @@ eventsCount: 5,
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Adding new issue</h5>
-<span class='badge badge-success'>03.03.2021 23:15:20</span>
-<span class='badge badge-danger'>03.03.2021 23:15:28</span>
-<span class='badge badge-default'>00:00:08:170</span>
+<span class='badge badge-success'>03.04.2021 00:21:56</span>
+<span class='badge badge-danger'>03.04.2021 00:22:03</span>
+<span class='badge badge-default'>00:00:07:108</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 </div>
 <div class="m-t-10 m-l-5"></div>
@@ -276,7 +276,7 @@ eventsCount: 5,
   <div class="card">
     <div class="card-header" role="tab">
       <div class="card-title">
-        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>adding issue in Jira</div>
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Getting issue in Jira</div>
       </div>
     </div>
         <div class="collapse">
@@ -286,18 +286,18 @@ eventsCount: 5,
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.PostSteps.when_user_hit_request(java.lang.String)">
-                <span>When when user hit "POST" request</span>
+              <div class="step pass-bg" title="stepDefinitions.PostSteps.user_hit_request_with_key(java.lang.String,java.lang.String)">
+                <span>When user hit "GET" request with key "JA-10"</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.PostSteps.user_should_get_response_code(java.lang.Integer)">
-                <span>Then user should get 201 response code</span>
+              <div class="step pass-bg" title="stepDefinitions.PostSteps.user_should_get_status_code(java.lang.Integer)">
+                <span>Then user should get 200 status code</span>
       <div>
       </div>
               </div>
-              <div class="step pass-bg" title="stepDefinitions.PostSteps.response_body_should_contains_and(java.lang.String,java.lang.String)">
-                <span>And response body should contains "id" and "key"</span>
+              <div class="step pass-bg" title="stepDefinitions.PostSteps.response_body_key_should_match_with_given_key()">
+                <span>And response body key should match with given key</span>
       <div>
       </div>
               </div>
@@ -329,12 +329,12 @@ eventsCount: 5,
 <span class="meta">
 <span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">@POST</p>
+<p class="name">@GET</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>@POST</h4>
+<h4>@GET</h4>
 <span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
@@ -348,11 +348,11 @@ eventsCount: 5,
 <tbody>
 <tr class="tag-test-status" status="pass">
 <td><span class="badge log pass-bg">Pass</span></td>
-<td>23:15:20 PM</td>
+<td>00:21:56 AM</td>
 <td>
-<a href="#" class="linked" test-id='1' id='2'>adding issue in Jira</a>
+<a href="#" class="linked" test-id='1' id='2'>Getting issue in Jira</a>
 <div class="">
-<span class="badge badge-default">Adding new issue.adding issue in Jira</span>
+<span class="badge badge-default">Adding new issue.Getting issue in Jira</span>
 </div>
 </td>
 </tr>

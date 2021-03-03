@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e42ad430-7d92-4b87-a4dc-75bd9438dd2a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Runner/runnerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Runner/runnerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/apiEngine/EndPoints.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/apiEngine/EndPoints.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/PostSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stepDefinitions/PostSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/AddIssue.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/AddIssue.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Runner/runnerTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Runner/runnerTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/AddIssue.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/AddIssue.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/PostSteps.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/stepDefinitions/PostSteps.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport/Spark.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/SparkReport/report.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/SparkReport/report.pdf" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

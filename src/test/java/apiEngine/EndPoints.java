@@ -20,12 +20,17 @@ public class EndPoints {
         return req;
     }
 
-    public static Response createIssue(){
+    public static Response createIssue(String endPoint){
 
         Response response = req.header("Content-Type", "application/json").body(jsonBody.getData())
 
-        .post();
+        .post(endPoint);
 
         return response;
+    }
+
+    public static Response getIssue(String endPoint){
+
+        return req.get(endPoint);
     }
 }

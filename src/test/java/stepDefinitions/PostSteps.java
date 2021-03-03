@@ -1,8 +1,10 @@
 package stepDefinitions;
 
+import apiEngine.APIResources;
 import apiEngine.EndPoints;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.cucumber.java.en.When;
 import io.restassured.specification.RequestSpecification;
@@ -19,14 +21,27 @@ public class PostSteps {
 
     }
 
-    @When("when user hit {string} request")
-    public void when_user_hit_request(String string) {
+    @When("user hit {string} request")
+    public void user_hit_request(String method) {
 
-        res = EndPoints.createIssue();
+        APIResources resources = APIResources.valueOf(method);
+
+        res = EndPoints.createIssue(resources.getResources());
 
     }
-    @Then("user should get {int} response code")
-    public void user_should_get_response_code(Integer statusCode) {
+
+    @When("user hit {string} request with key {string}")
+    public void user_hit_request_with_key(String method, String key) {
+
+        APIResources resources = APIResources.valueOf(method);
+
+        res =EndPoints.getIssue(resources.getResources()+key);
+
+    }
+
+
+    @Then("user should get {int} status code")
+    public void user_should_get_status_code(Integer statusCode) {
 
         Assert.assertEquals((int)statusCode, res.statusCode());
 
@@ -42,6 +57,18 @@ public class PostSteps {
         Assert.assertTrue(body.contains(id));
 
         Assert.assertTrue(body.contains(key));
+    }
+
+    @Then("response body key should match with given key")
+    public void response_body_key_should_match_with_given_key() {
+
+        String resp = res.asString();
+
+        JsonPath path = new JsonPath(resp);
+
+        String key = path.getString("key");
+
+        Assert.assertEquals("JA-10", key);
     }
 
 }
