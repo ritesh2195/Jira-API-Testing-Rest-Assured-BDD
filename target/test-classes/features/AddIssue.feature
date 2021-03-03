@@ -1,5 +1,6 @@
 Feature: Adding new issue
 
+  @POST
   Scenario: adding issue in Jira
 
     Given user authenticate himself
